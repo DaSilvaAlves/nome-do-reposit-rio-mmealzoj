@@ -1,0 +1,122 @@
+:root {
+ background-color: #050505;
+  --text-color: #ffffff;
+  --accent-color #D4AF37;
+  --lowriority-color: #34a;
+  --medium-priority-color: #ffc107;
+  --high-priority-color: #e74c3c;
+  --font-family: 'Play Display', serif;
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  padding:20px}
+
+.column {
+  background-color: #2f22f;
+  border: 1px solid #D4AF;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.column-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  background-color: #3f3f3f;
+  border: 1px solidD4AF37;
+  border-radius: 10px;
+ : 20px  margin-bottom: 20px;
+  cursor: move;
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.priority-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10;
+}
+
+.low-priority {
+  background-color: var(--low-priority-color);
+}
+
+.medium-priority {
+  background-color: var(--medium-priority-color}
+
+.high-priority {
+  background-color: var(--high-priority-color);
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #4AF37;
+  border-radius: 10px;
+}
+
+.add-task-button {
+  color: var(--accent-color);
+  border: none;
+  padding: 10px20px;
+  font-size: 18;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.edit-task-button {
+  color: var(--accent);
+  border: none;
+  padding: 10px 20;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delete-task-button {
+  background: var(--high-priority-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size 18px;
+ border-radius: 10px;
+  cursor: pointer;
+}
+
+.task {
+  background-color: var(--low-p-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
